@@ -25,7 +25,44 @@ no formato:
 
 Sendo que a descrição do produto pode conter espaços.
 
-##Exemplo:
+## Exemplo:
+
 101;Camiseta regata
+
 203;Notebook Neo
+
 150;Caneca do Palmeiras
+
+# 3. Arrays para armazenamento dos dados
+
+Os dados das vendas deverão ser armazenadas usando vários arrays (não devem ser usadas structs):
+
+#define MAX 1000
+
+int ids[MAX];
+
+int produtoIds[MAX];
+
+int quantidades[MAX];
+
+float precos[MAX];
+
+Os dados das vendas serão armazenados em “arrays paralelos”. Isto quer dizer que os dados da venda de
+índice i serão obtidos acessando:
+
+ids[i]
+
+produtoIds[i]
+
+quantidades[i]
+
+precos[i]
+
+Os dados dos produtos também serão armazenados em arrays (não devem ser usadas structs):
+
+int produtoIdsCatalogo[MAX];
+
+char descricoes[MAX][50];
+
+Estes arrays também são usados de maneira “paralela”. Assim, os dados de um produto de índice j serão
+obtidos acessando:
