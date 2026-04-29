@@ -8,7 +8,7 @@ Um arquivo vendas.txt contém registros no formato:
 - id produto_id quantidade preco_unitario
 
 ## Exemplo:
-* 1 101 2 10.5 *
+1 101 2 10.5 
 -3 101 3 10.5
 -2 203 1 50.0
 onde cada linha representa uma venda.
